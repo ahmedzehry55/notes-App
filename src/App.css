@@ -1,0 +1,142 @@
+body {
+  background-image: url(./adawalia-logo.png);
+  position: relative;
+  background-position:90% 17px;
+  background-repeat: no-repeat;
+  background-size: 100px 80px;
+}
+.App {
+  margin-top: 5% ;
+  display: flex;
+}
+
+.preview-section {
+  height: 600px;
+  overflow: auto;
+}
+
+.notes-section {
+  position: relative;
+  width: 25%;
+  background-color: #B8F2E6;
+}
+
+.preview-section {
+  position: relative;
+  width: 75%;
+  padding: 10px 75px;
+  box-sizing: border-box;
+  background-color: #5E6472;
+  color: #fff;
+}
+
+.add-btn {
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    width: 45px;
+    height: 45px;
+    line-height: 28px;
+    background-color: #FAF3DD;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 30px;
+    border: 0;
+    cursor: pointer;
+    color: #5E6472;
+    outline: 0;
+    z-index: 10;
+    transform: translateY(-50%);
+}
+
+.notes-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.note-item {
+  cursor: pointer;
+  padding: 12px 10px;
+  font-size: 15px;
+  color: #ffffff;
+  border-bottom: 0.5px solid #AED9E0;
+}
+
+.note-item.active {
+  background-color: #FAF3DD;
+}
+
+.form-input {
+  text-align: center;
+  
+  display: block;
+  width: 100%;
+  padding: .700rem .75rem;
+  font-size: 1rem;
+  font-family: cairo;
+  line-height: 1.5;
+  color: #ffffff;
+  background-color: #B8F2E6;
+  background-clip: padding-box;
+  border-radius: 2%;
+  border: 1px solid #ffffff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.note-operations {
+    position: absolute;
+    left: 10%;
+    top: 6%;
+    display: flex;
+    justify-content: space-between;
+    width: 60px;
+    font-size: 20px;
+}
+.note-operations a {
+  color: #7b7777;
+}
+
+.button {
+    margin-top: 20px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #5E6472;
+    padding: 5px 60px;
+    font-size: 20px;
+}
+
+.green {
+  background: #28a745;
+}
+
+.center {
+  text-align: center;
+}
+
+.alert-container {
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  background: #f43a4c;
+  min-width: 250px;
+  border-radius: 5px;
+}
+
+.alert-container ul {
+  font-size: 14px;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .notes-section {
+    width: 30%;
+  }
+  .preview-section {
+    width: 70%;
+    padding: 10px 30px;
+  }
+}
